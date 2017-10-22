@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Chrobot;
+    src: url("../fonts/Chrobot.otf") format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+
+html, body {
+    /*font-family: 'Chrobot', sans-serif;*/
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+/* Untuk halaman awal */
+.splashscreen {
+    background-image: url("../img/bg.jpg");
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    background-color: #E8F0FE;
+    font-family: 'Chrobot', sans-serif;
+    padding: 50px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.splashscreen h1 {
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.splashscreen h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+
+.splashscreen .btn-dewa {
+    font-size: 24px;
+}
+
+/* Master CSS Tombol */
+.btn-dewa {
+    border: 1px solid #393B3F;
+    padding: 15px;
+    text-decoration: none;
+    background: #424242;
+    color: #f5f5f5;
+}
+
+.btn-dewa:hover {
+    background: #f5f5f5;
+    border: 2px solid #212121;
+    color: #212121;
+    font-weight: bold;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/bg.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: -1;
+}

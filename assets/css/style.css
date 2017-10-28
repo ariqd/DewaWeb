@@ -16,24 +16,25 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: none;
+    /*background: none;*/
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Chrobot', sans-serif;
 }
 
 /* Untuk halaman awal */
 .splashscreen {
-    background-image: url("../img/bg.jpg");
     position:absolute;
-    top:0;
-    left:0;
+    /*top:0;*/
+    /*left:0;*/
     bottom:0;
     width:100%;
     text-align: center;
-    background-color: #E8F0FE;
-    font-family: 'Chrobot', sans-serif;
-    padding: 50px 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-color: #E8F0FE;*/
+    padding: 100px 0;
+    display: none;
 }
 
 .splashscreen h1 {
@@ -62,7 +63,7 @@ html, body {
 
 .btn-dewa:hover {
     background: #f5f5f5;
-    border: 2px solid #212121;
+    /*border: 2px solid #212121;*/
     color: #212121;
     font-weight: bold;
 }
@@ -80,5 +81,22 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    z-index: -1;
+    z-index: -1000;
+}
+
+.section.section-dewa {
+    padding: 120px 0;
+    line-height: 24px;
+}
+
+.row.images {
+    position:absolute;
+}
+
+.container {
+    width: 900px;
+}
+
+#section1 p {
+    line-height: 16px;
 }

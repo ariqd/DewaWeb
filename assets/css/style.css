@@ -100,3 +100,7 @@ html, body {
 #section1 p {
     line-height: 16px;
 }
+
+ #section2 p {
+     line-height: 18px;
+ }

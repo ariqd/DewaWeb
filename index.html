@@ -40,10 +40,10 @@
            <a href="javascript:void(0)" class="btn btn-dewa enter_link" id="splash4">Get Hosting!</a>
         </div>
 
-        <div class="content" style="display:none">
+        <div class="content" style="display:none;padding-top:75px;">
             <!-- Start Navbar -->
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light" style="z-index:100">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="z-index:100">
+                <div class="container">
                   <a class="navbar-brand" href="#">
                       <img src="assets/img/icon_logo.png" alt="logo" width="50">
                       Dewaweb
@@ -73,8 +73,8 @@
                       </li>
                     </ul>
                   </div>
-                </nav>
-            </div>
+              </div>
+            </nav>
             <!-- End Navbar -->
 
             <div id="fullpage">
@@ -118,15 +118,15 @@
                             <div class="text-center">
                                 <img src="assets/img/icon_personal.png" width="150">
                                 <h3><b>Corporates</b></h3>
-                                <h5>Mulai dari 15 ribu / bulan</h5>
-                                <i class="fa fa-chevron-down"></i>
+                                <h5>Mulai dari 200 ribu / bulan</h5>
+                                <button class="btn btn-link" id="down" style="cursor:pointer"><i class="fa fa-chevron-down"></i></button>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="text-center">
                                 <img src="assets/img/icon_personal.png" width="150">
                                 <h3><b>Power-User</b></h3>
-                                <h5>Mulai dari 15 ribu / bulan</h5>
+                                <h5>Mulai dari 300 ribu / bulan</h5>
                             </div>
                         </div>
                     </div>
@@ -270,7 +270,14 @@
                 </div>
         	</div>
         	<div class="section" id="section3">
-
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="text-center" style="margin-bottom:0">BRING YOUR FRIENDS AND GET REWARDED WITH CASH</h1>
+                            <h4 class="text-center" style="margin-bottom:25px">Affiliate Program yang memberikan komisi langsung Rp 100.000<br>Tanpa modal & tanpa resiko</h2>
+                        </div>
+                    </div>
+                </div>
         	</div>
         </div>
         </div>
@@ -326,8 +333,12 @@
                 // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
                 // anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
                 menu: '#menu',
-                scrollingSpeed: 1000
+                scrollingSpeed: 1000,
+                scrollBar: true
             });
+            $('#down').click(function() {
+                $.fn.fullpage.moveSectionDown();
+            })
         });
         </script>
     </body>

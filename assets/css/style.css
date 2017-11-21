@@ -125,3 +125,17 @@ html, body {
      z-index: 1002;
      color: #ffffff;
  }
+
+ .tab-wannabe {
+     border: 1px solid #212121;
+     border-radius: 75px;
+     padding: 10px;
+     color: #212121;
+     margin-right: 10px;
+ }
+
+ .tab-wannabe:hover, .tab-wannabe.active {
+     text-decoration: none;
+     background: #FF9800;
+     color: #ffffff;
+ }

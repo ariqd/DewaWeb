@@ -12,13 +12,10 @@ h1, h2, h3, h4, h5 {
 }
 
 html, body {
-    /*font-family: 'Chrobot', sans-serif;*/
     height: 100%;
     margin: 0;
     padding: 0;
-    /*background: none;*/
     background-image: url("../img/bg.jpg");
-    /*background-position: center;*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -28,14 +25,10 @@ html, body {
 /* Untuk halaman awal */
 .splashscreen {
     position:absolute;
-    /*top:0;*/
-    /*left:0;*/
     bottom:0;
     width:100%;
     text-align: center;
-    /*background-color: #E8F0FE;*/
     padding: 100px 0;
-    display: none;
 }
 
 .splashscreen h1 {
@@ -64,7 +57,6 @@ html, body {
 
 .btn-dewa:hover {
     background: #f5f5f5;
-    /*border: 2px solid #212121;*/
     color: #212121;
     font-weight: bold;
 }
@@ -107,9 +99,9 @@ html, body {
  }
 
  #myBtn {
-     position: fixed; /* Fixed/sticky position */
+     position: relative; /* Fixed/sticky position */
      bottom: 20px; /* Place the button at the bottom of the page */
-     right: 30px; /* Place the button 30px from the right */
+     left: 580px;
      z-index: 99; /* Make sure it does not overlap */
      border: none; /* Remove borders */
      outline: none; /* Remove outline */
@@ -122,4 +114,14 @@ html, body {
 
  #myBtn:hover {
      background-color: #555; /* Add a dark-grey background on hover */
+ }
+
+ .footer {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     background: #212121;
+     height:300px;
+     z-index: 1002;
+     color: #ffffff;
  }

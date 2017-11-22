@@ -101,7 +101,7 @@ html, body {
  #myBtn {
      position: relative; /* Fixed/sticky position */
      bottom: 20px; /* Place the button at the bottom of the page */
-     left: 580px;
+     left: 530px;
      z-index: 99; /* Make sure it does not overlap */
      border: none; /* Remove borders */
      outline: none; /* Remove outline */
@@ -132,10 +132,138 @@ html, body {
      padding: 10px;
      color: #212121;
      margin-right: 10px;
+     font-size: 15px;
  }
 
  .tab-wannabe:hover, .tab-wannabe.active {
      text-decoration: none;
-     background: #FF9800;
+     background: #F7941E;
      color: #ffffff;
  }
+
+    #fdw-pricing-table {
+ 		margin:0 auto;
+ 		text-align: center;
+ 		width: 100%;
+ 		zoom: 1;
+        border-radius: 75px;
+        padding-top:50px;
+        padding-bottom:50px;
+ 	}
+
+ 	#fdw-pricing-table .plan {
+ 		/*font-size: 13px;*/
+ 		border: 1px solid #ddd;
+ 		color: #333;
+ 		padding: 20px;
+ 		width: 21%;
+ 		float: left;
+ 		_display: inline;
+ 		position: relative;
+ 		margin: 0 5px;
+ 		-moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+ 		-webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+ 		box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+    border-radius: 15px;
+ 	}
+  #fdw-pricing-table .text {
+ 		/*font-size: 13px;*/
+ 		color: #333;
+ 		padding: 20px;
+ 		/*width: 20%;*/
+ 		float: left;
+ 		_display: inline;
+ 		position: relative;
+ 		margin: 0 5px;
+    text-align: right;
+ 	}
+
+ 	#fdw-pricing-table ul {
+ 		margin: 20px 0;
+ 		padding: 0;
+ 		list-style: none;
+ 	}
+
+ 	#fdw-pricing-table li {
+ 		padding: 10px 0;
+ 	}
+
+  #fdw-pricing-table li h1{
+ 		padding: 10px 0;
+    color: #83D5F7;
+    font-size: 15px;
+ 	}
+  #fdw-pricing-table li h2{
+    margin-top: -30px;
+    color: #83D5F7;
+    font-size: 12px;
+  }
+
+  #fdw-pricing-table li img{
+    width:20px;
+  }
+
+  #right-button{
+    width:50px;
+    margin-left: 95%;
+    margin-top: -20%;
+  }
+  #right-button img{
+    width:55px;
+    padding: 5px;
+  }
+
+  #right-button img:hover{
+    width:60px;
+    padding: 5px;
+  }
+
+    .nav-dewa .nav-item .nav-link {
+        color: #212121;
+    }
+
+  .nav-dewa .nav-item .nav-link.active {
+      border-bottom: 2px solid #F7941E;
+  }
+
+  .navbar {
+      font-weight: 900;
+  }
+
+  .pricing {
+      border: 1px solid #212121;
+      border-radius: 20px;
+      padding: 10px;
+  }
+
+  .pricing button {
+      border: none;
+      background: #212121;
+      color: #ffffff;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .plan .plan-title {
+      position: absolute;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      background: #424242;
+      border-radius: 30px;
+      padding: 5px 10px;
+      top: -15px;
+      left: -5px;
+      width: 180px;
+  }
+
+  .plan .order {
+      color: #fff;
+      background: #F7941E;
+      padding: 12px;
+      border: 1px solid #212121;
+      border-radius: 20px;
+      font-size: 22px;
+      margin-bottom: 10px;
+      cursor: pointer;
+  }
